@@ -1,5 +1,9 @@
+import Main from "../components/layouts/Main";
+
 export default function Index() {
   return (
-    <div>Halo Dunia</div>
-  )
+    <Main>
+      
+    </Main>
+  );
 }
