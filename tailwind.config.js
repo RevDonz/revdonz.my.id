@@ -1,11 +1,16 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx,mdx}'],
   darkMode: 'class',
   theme: {
+    fontFamily: {
+      inter: ['Inter', 'sans-serif'],
+    },
     extend: {
+      fontFamily: {
+        sans: ['Inter', ...fontFamily.sans],
+      },
       colors: {
         dark: {
           100: '#A6A7AB',
