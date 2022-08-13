@@ -1,6 +1,9 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const { pathname } = useRouter();
+
   const Routes = [
     {
       link: '/',

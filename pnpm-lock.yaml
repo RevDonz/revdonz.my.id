@@ -6,6 +6,7 @@ specifiers:
   '@types/react': 18.0.8
   '@types/react-dom': 18.0.3
   autoprefixer: ^10.4.7
+  clsx: ^1.2.1
   commitizen: ^4.2.5
   eslint: 8.14.0
   eslint-config-next: 12.1.6
@@ -21,6 +22,7 @@ specifiers:
 
 dependencies:
   '@babel/core': 7.17.10
+  clsx: 1.2.1
   commitizen: 4.2.5
   next: 12.1.6_talmm3uuvp6ssixt2qevhfgvue
   next-pwa: 5.5.2_4qmfeh7qgqcfyn3wfjmz4mdw2e
@@ -2221,6 +2223,11 @@ packages:
   /clone/1.0.4:
     resolution: {integrity: sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==}
     engines: {node: '>=0.8'}
+    dev: false
+
+  /clsx/1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert/1.9.3:
