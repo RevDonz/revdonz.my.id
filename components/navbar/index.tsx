@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav className='w-full sticky top-0 bg-red-50 z-50'>
       <div className='flex max-w-5xl mx-auto items-center'>
         <Link href={'/'}>
-          <a className='py-2 px-3 bg-blue-100'>tes</a>
+          <a className='py-2 px-3 bg-blue-100 hover:bg-red-100'>tes</a>
         </Link>
         <Link href={'/blog'}>
           <a className='py-2 px-3 bg-blue-100'>blog</a>
