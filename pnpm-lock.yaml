@@ -10,6 +10,7 @@ specifiers:
   eslint-config-next: 12.1.6
   next: 12.1.6
   next-pwa: ^5.5.2
+  next-themes: ^0.2.0
   postcss: ^8.4.13
   react: 18.1.0
   react-dom: 18.1.0
@@ -21,6 +22,7 @@ dependencies:
   '@babel/core': 7.17.10
   next: 12.1.6_talmm3uuvp6ssixt2qevhfgvue
   next-pwa: 5.5.2_4qmfeh7qgqcfyn3wfjmz4mdw2e
+  next-themes: 0.2.0_2mgcgz5qhsdxw4fgpqzqeafmkq
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   webpack: 5.72.0
@@ -3282,6 +3284,18 @@ packages:
       - supports-color
       - uglify-js
       - webpack
+    dev: false
+
+  /next-themes/0.2.0_2mgcgz5qhsdxw4fgpqzqeafmkq:
+    resolution: {integrity: sha512-myhpDL4vadBD9YDSHiewqvzorGzB03N84e+3LxCwHRlM/hiBOaW+UsKsQojQAzC7fdcJA0l2ppveXcYaVV+hxQ==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 12.1.6_talmm3uuvp6ssixt2qevhfgvue
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
     dev: false
 
   /next/12.1.6_talmm3uuvp6ssixt2qevhfgvue:
