@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className={clsx('layout flex flex-col flex-grow')}
+              className={clsx('flex flex-col flex-grow h-full')}
             >
               <Component {...pageProps} />
             </motion.main>
