@@ -1,6 +1,6 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import Navbar from '@/components/mollecules/Header';
+import Navbar from '@/components/organism/Header';
 import { ThemeProvider } from 'next-themes';
 import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 import clsx from 'clsx';

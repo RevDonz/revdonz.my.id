@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import DarkMode from './DarkMode';
+import DarkMode from '../mollecules/DarkMode';
 
 const Navbar = () => {
   const { pathname } = useRouter();
@@ -27,7 +27,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={clsx('fixed inset-0 z-50 h-16', 'bg-zinc-50 dark:bg-dark-900')}
+      className={clsx(
+        'sticky inset-0 z-50 h-16',
+        'bg-zinc-50 dark:bg-dark-900'
+      )}
     >
       <div
         className={clsx(
@@ -35,7 +38,7 @@ const Navbar = () => {
           'flex items-center justify-between'
         )}
       >
-        <div className='flex items-center -ml-3.5'>
+        <div className={clsx('flex items-center -ml-3.5')}>
           {Routes.map((route) => {
             return (
               <Link key={route.name} href={route.link}>
