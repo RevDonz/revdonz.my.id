@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <div
       className={clsx(
-        'pt-5 pb-3 text-center',
-        'bg-zinc-500 dark:bg-dark-900 bottom-0'
+        'py-3 text-center',
+        'bg-zinc-50 dark:bg-dark-900 bottom-0'
       )}
     >
       <p
