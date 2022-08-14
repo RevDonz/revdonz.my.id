@@ -45,9 +45,9 @@ const Navbar = () => {
                 <a
                   className={clsx(
                     'py-2 px-4 rounded-md transition-all font-semibold relative inline-flex',
-                    'hover:bg-indigo-100 dark:hover:bg-dark-500/50',
+                    'hover:bg-primary-100 dark:hover:bg-dark-500/50',
                     route.link === pathname
-                      ? 'text-indigo-700 dark:text-indigo-400'
+                      ? 'text-primary-700 dark:text-primary-400'
                       : 'text-gray-700 dark:text-gray-300'
                   )}
                 >

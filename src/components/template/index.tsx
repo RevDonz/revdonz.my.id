@@ -7,9 +7,18 @@ interface MainProps {
 }
 const Main: React.FC<MainProps> = ({ children, className, ...props }) => {
   return (
-    <div className={clsx('mt-36', className)} {...props}>
-      {children}
-    </div>
+    <>
+      <div
+        id='main-content'
+        className={clsx(
+          'layout flex flex-col flex-1 h-full',
+          className
+        )}
+        {...props}
+      >
+        {children}
+      </div>
+    </>
   );
 };
 
