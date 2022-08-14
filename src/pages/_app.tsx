@@ -1,29 +1,38 @@
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import Navbar from '@/components/organism/Header';
 import { ThemeProvider } from 'next-themes';
-import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
+import {
+  AnimatePresence,
+  domAnimation,
+  LazyMotion,
+  motion,
+} from 'framer-motion';
 import clsx from 'clsx';
+import Navbar from '@/components/organism/Header';
+import Footer from '@/components/mollecules/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider defaultTheme='dark' attribute='class'>
       <LazyMotion features={domAnimation}>
-        <Navbar />
-        <AnimatePresence
-          initial={false}
-          onExitComplete={() => window.scrollTo(0, 0)}
-          exitBeforeEnter
-        >
-          <m.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className={clsx('layout')}
+        <div className='min-h-screen flex flex-col h-full'>
+          <Navbar />
+          <AnimatePresence
+            initial={false}
+            onExitComplete={() => window.scrollTo(0, 0)}
+            exitBeforeEnter
           >
-            <Component {...pageProps} />
-          </m.div>
-        </AnimatePresence>
+            <motion.main
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={clsx('layout flex flex-col flex-grow')}
+            >
+              <Component {...pageProps} />
+            </motion.main>
+          </AnimatePresence>
+          <Footer />
+        </div>
       </LazyMotion>
     </ThemeProvider>
   );
