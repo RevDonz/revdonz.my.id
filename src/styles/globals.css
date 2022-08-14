@@ -6,10 +6,10 @@
 
 @layer base {
   body {
-    @apply bg-gray-50 dark: bg-dark-900;
+    @apply bg-gray-50 dark:bg-dark-900;
   }
 
   .layout {
-    @apply mx-auto w-[90%] max-w-3xl md: w-full;
+    @apply mx-auto w-[90%] max-w-3xl md:w-full;
   }
 }
