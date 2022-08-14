@@ -1,9 +1,9 @@
-import Main from '@/components/layout';
+import Main from '@/components/template';
 
 export default function Index() {
   return (
     <Main>
-      <div className='h-screen mt-20'>asd</div>
+      <div className='h-screen'>asd</div>
     </Main>
   );
 }

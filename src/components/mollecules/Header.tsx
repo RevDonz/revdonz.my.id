@@ -1,18 +1,10 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
-import { HiSun, HiMoon } from 'react-icons/hi';
-import Button from '@/components/atoms/Button';
+import DarkMode from './DarkMode';
 
 const Navbar = () => {
   const { pathname } = useRouter();
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
-
-  useEffect(() => setMounted(true), []);
-  if (!mounted) return null;
 
   const Routes = [
     {
@@ -34,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav
+    <header
       className={clsx('fixed inset-0 z-50 h-16', 'bg-zinc-50 dark:bg-dark-900')}
     >
       <div
@@ -43,13 +35,13 @@ const Navbar = () => {
           'flex items-center justify-between'
         )}
       >
-        <div className='flex'>
+        <div className='flex items-center -ml-3.5'>
           {Routes.map((route) => {
             return (
               <Link key={route.name} href={route.link}>
                 <a
                   className={clsx(
-                    'py-2 px-4 rounded-md transition-all font-semibold',
+                    'py-2 px-4 rounded-md transition-all font-semibold relative inline-flex',
                     'hover:bg-indigo-100 dark:hover:bg-dark-500/50',
                     route.link === pathname
                       ? 'text-indigo-700 dark:text-indigo-400'
@@ -62,23 +54,9 @@ const Navbar = () => {
             );
           })}
         </div>
-        <Button
-          className={clsx(
-            'text-lg rounded-md h-10 w-10',
-            'bg-indigo-50 dark:bg-dark-500/50'
-          )}
-          onClick={() => {
-            setTheme(theme === 'light' ? 'dark' : 'light');
-          }}
-        >
-          {theme === 'light' ? (
-            <HiMoon className={clsx('text-indigo-700')} />
-          ) : (
-            <HiSun className={clsx('text-yellow-400')} />
-          )}
-        </Button>
+        <DarkMode />
       </div>
-    </nav>
+    </header>
   );
 };
 
