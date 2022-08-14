@@ -1,4 +1,5 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,mdx}'],
@@ -12,6 +13,9 @@ module.exports = {
         sans: ['Inter', ...fontFamily.sans],
       },
       colors: {
+        primary: colors.indigo,
+        secondary: colors.pink,
+        ternary: colors.purple,
         dark: {
           100: '#A6A7AB',
           200: '#909296',

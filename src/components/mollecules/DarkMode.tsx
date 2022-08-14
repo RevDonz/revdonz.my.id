@@ -15,14 +15,14 @@ const DarkMode = () => {
     <Button
       className={clsx(
         'text-lg rounded-md h-10 w-10',
-        'bg-indigo-50 dark:bg-dark-500/50'
+        'bg-primary-50 dark:bg-dark-500/50'
       )}
       onClick={() => {
         setTheme(theme === 'light' ? 'dark' : 'light');
       }}
     >
       {theme === 'light' ? (
-        <HiMoon className={clsx('text-indigo-700')} />
+        <HiMoon className={clsx('text-primary-700')} />
       ) : (
         <HiSun className={clsx('text-yellow-400')} />
       )}
