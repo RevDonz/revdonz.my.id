@@ -3,8 +3,15 @@ import Main from '@/components/template';
 import clsx from 'clsx';
 import React from 'react';
 
+export interface CompProps {
+  // title: string;
+  // description: string;
+  children?: React.ReactNode;
+  // className?: string;
+}
+
 const blog = () => {
-  const Card = ({ children }) => {
+  const Card = ({ children }: CompProps) => {
     return (
       <div
         className={clsx(
@@ -15,7 +22,7 @@ const blog = () => {
           'before:absolute before:-z-[1] before:inset-0 before:transition-transform',
           'before:bg-black dark:before:bg-gradient-to-r before:from-primary-500 before:to-ternary-500',
           'hover:before:translate-x-2 hover:before:translate-y-2',
-          'active:before:translate-x-1 active:before:translate-y-1',
+          'active:before:translate-x-1 active:before:translate-y-1'
         )}
       >
         {children}
@@ -23,7 +30,7 @@ const blog = () => {
     );
   };
 
-  const CardBlog = ({ children }) => {
+  const CardBlog = ({ children }: CompProps) => {
     return <div className='p-3 bg-gray-50 dark:bg-dark-800'>{children}</div>;
   };
   return (
