@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Index() {
   return (
     <Main className='flex flex-col-reverse items-center h-full justify-center leading-6 md:flex-row'>
-      <div className='w-full border-solid md:w-1/2 bg-secondary'>
+      <div className='w-full border-solid md:w-1/2 bg-secondary text-center md:text-left'>
         <h1>Reva Doni Aprilio</h1>
         <h3
           className={clsx(
