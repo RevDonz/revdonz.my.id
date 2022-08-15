@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <p
         className={clsx(
-          'text-xs md:text-sm font-medium',
+          'text-xs md:text-sm font-medium select-none',
           'text-gray-700 dark:text-gray-300'
         )}
       >
