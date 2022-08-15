@@ -36,7 +36,7 @@ const blog = () => {
   return (
     <Main className='mt-10'>
       <Hero title={'Blog'} description={'Ini adalah blog'} />
-      <section className={clsx('relative mt-6')}>
+      <section className={clsx('relative')}>
         <div className='flex flex-col space-y-3 group'>
           <Card>
             <CardBlog>
