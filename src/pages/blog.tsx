@@ -15,7 +15,7 @@ const blog = () => {
           'before:absolute before:-z-[1] before:inset-0 before:transition-transform',
           'before:bg-black dark:before:bg-gradient-to-r before:from-primary-500 before:to-ternary-500',
           'hover:before:translate-x-2 hover:before:translate-y-2',
-          'active:before:translate-x-1 active:before:translate-y-1'
+          'active:before:translate-x-1 active:before:translate-y-1',
         )}
       >
         {children}
