@@ -1,6 +1,15 @@
 import clsx from 'clsx';
+import { useRouter } from 'next/router';
 
 const Footer = () => {
+  const { pathname } = useRouter();
+  const isError =
+    pathname === '/_error' || pathname === '/_offline' || pathname === '/404';
+
+  if (isError) {
+    return null;
+  }
+
   return (
     <div
       className={clsx(

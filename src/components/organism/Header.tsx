@@ -5,7 +5,13 @@ import DarkMode from '../mollecules/DarkMode';
 
 const Navbar = () => {
   const { pathname } = useRouter();
+  const isError =
+    pathname === '/_error' || pathname === '/_offline' || pathname === '/404';
 
+  if (isError) {
+    return null;
+  }
+  
   const Routes = [
     {
       link: '/',
