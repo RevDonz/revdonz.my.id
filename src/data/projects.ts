@@ -3,7 +3,7 @@ export const projects = [
     title: 'Lasles VPN',
     date: '17/04/2021',
     summary:
-      'Practice slicing web design into a website page with Tailwindcss. Practice slicing web design into a website page with Tailwindcss.',
+      'Practice slicing web design into a website page with Tailwindcss.',
     image: '',
     stack: ['React', 'TailwindCSS'],
     link: {
