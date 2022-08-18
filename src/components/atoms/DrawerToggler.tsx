@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { HiMenuAlt2, HiOutlineX } from 'react-icons/hi';
 import { Routes } from '../mollecules/Navbar';
 import Button from './Button';
+import UnstyledLink from './UnstyledLink';
 
 const DrawerToggler = () => {
   const [open, setOpen] = useState(false);
@@ -39,18 +40,18 @@ const Drawer = () => {
       <div className='layout flex flex-col'>
         {Routes.map((route) => {
           return (
-            <Link href={route.link} key={route.link}>
-              <a
-                className={clsx(
-                  'py-4 border-b-[1.6px] font-medium',
-                  pathname === route.link
-                    ? 'border-primary-600 dark:border-primary-500'
-                    : 'text-gray-700 dark:text-gray-300 border-dark-100 dark:border-dark-500'
-                )}
-              >
-                {route.name}
-              </a>
-            </Link>
+            <UnstyledLink
+              href={route.link}
+              key={route.link}
+              className={clsx(
+                'py-4 border-b-[1.6px] font-medium',
+                pathname === route.link
+                  ? 'border-primary-600 dark:border-primary-500'
+                  : 'text-gray-700 dark:text-gray-300 border-dark-100 dark:border-dark-500'
+              )}
+            >
+              {route.name}
+            </UnstyledLink>
           );
         })}
       </div>
