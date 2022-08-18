@@ -13,7 +13,7 @@ const CanvasControl = ({ clearCanvas, color, setColor }: ControlProps) => {
   ];
 
   return (
-    <div className='fixed right-3 p-2 bg-gray-200 dark:bg-dark-600 rounded-full top-[25%] md:top-[unset] z-50'>
+    <div className='fixed right-3 p-2 bg-gray-200 dark:bg-dark-600 rounded-full top-[25%] md:top-[unset] z-40'>
       <div className='flex flex-col space-y-1'>
         {colors.map((data, key) => {
           return (
