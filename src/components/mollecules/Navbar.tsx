@@ -23,12 +23,6 @@ export const Routes = [
 
 const Navbar = () => {
   const { pathname } = useRouter();
-  const isError =
-    pathname === '/_error' || pathname === '/_offline' || pathname === '/404';
-
-  if (isError) {
-    return null;
-  }
 
   return (
     <nav className={clsx('items-center -ml-3.5 hidden md:flex')}>
