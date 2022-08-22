@@ -1,6 +1,7 @@
 import { ProjectProps } from '@/data/project';
 import UnderlinedLink from './UnderlinedLink';
 import { FaGithub } from 'react-icons/fa';
+import { FiGlobe } from 'react-icons/fi';
 
 const ProjectCard = ({ title, summary, link }: ProjectProps) => {
   return (
@@ -13,12 +14,17 @@ const ProjectCard = ({ title, summary, link }: ProjectProps) => {
         {/* <UnderlinedLink href={link.github}>Repository</UnderlinedLink>
         <UnderlinedLink href={link.demo}>Demo</UnderlinedLink> */}
         <UnderlinedLink href={''}>
-          <div className="flex items-center gap-1">
+          <div className='flex items-center gap-1'>
             <FaGithub />
             <p>Repository</p>
           </div>
         </UnderlinedLink>
-        <UnderlinedLink href={''}>Demo</UnderlinedLink>
+        <UnderlinedLink href={''}>
+          <div className='flex items-center gap-1'>
+            <FiGlobe />
+            <p>Demo</p>
+          </div>
+        </UnderlinedLink>
       </div>
     </div>
   );

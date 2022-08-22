@@ -10,7 +10,7 @@ const UnderlinedLink: React.FunctionComponent<UnstyledLinkProps> = ({
 }) => {
   return (
     <UnstyledLink
-      className={clsx('underline decoration-dotted underline-offset-2 hover:decoration-solid font-medium', className)}
+      className={clsx('underline decoration-dotted underline-offset-4 hover:decoration-solid font-medium', className)}
       href={href}
       {...props}
     >

@@ -22,4 +22,37 @@ export const projects = [
       demo: 'https://next-todolist-peach.vercel.app/',
     },
   },
+  {
+    title: 'Inventory Lab',
+    date: '07/09/2021',
+    summary: 'Build an Inventory website page with MERN Stack.',
+    image: '',
+    stack: ['Mongo DB', 'Express JS', 'React JS', 'Node JS'],
+    link: {
+      github: 'https://github.com/RevDonz/Inventory-Lab',
+      demo: 'https://inventory-lab.netlify.app/',
+    },
+  },
+  {
+    title: 'Kerjago Web',
+    date: '07/09/2021',
+    summary: 'Build a landing page website for Kerjago',
+    image: '',
+    stack: ['Mongo DB', 'Express JS', 'React JS', 'Node JS'],
+    link: {
+      github: 'https://github.com/RevDonz/Inventory-Lab',
+      demo: 'https://inventory-lab.netlify.app/',
+    },
+  },
+  {
+    title: 'Paper Anotation',
+    date: '07/09/2021',
+    summary: 'Build a landing page website for Kerjago',
+    image: '',
+    stack: ['Mongo DB', 'Express JS', 'React JS', 'Node JS'],
+    link: {
+      github: 'https://github.com/fanzru/web-anotasi-paper',
+      demo: 'https://skripsi.fanzru.dev/',
+    },
+  },
 ];
