@@ -7,7 +7,7 @@ export interface HeroProps {
 
 const Hero = ({ title, description }: HeroProps) => {
   return (
-    <section className="mb-5">
+    <section className="mb-8">
       <h1>{title}</h1>
       <p>{description}</p>
     </section>
