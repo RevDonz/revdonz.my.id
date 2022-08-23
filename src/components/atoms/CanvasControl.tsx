@@ -22,6 +22,7 @@ const CanvasControl = ({ clearCanvas, color, setColor }: ControlProps) => {
               className='w-8 h-8 rounded-full'
               style={{ backgroundColor: data }}
               key={key}
+              aria-label='Change Brush Color'
             >
               {color === data && <HiCheckCircle className='mx-auto text-xl' />}
             </button>
@@ -33,6 +34,7 @@ const CanvasControl = ({ clearCanvas, color, setColor }: ControlProps) => {
           onClick={() => {
             clearCanvas();
           }}
+          aria-label='Clear Canvas'
         >
           <HiTrash className='mx-auto' />
         </button>
