@@ -14,7 +14,15 @@ const Card = ({ children }: CardProps) => {
         )}
       />
 
-      <div className='p-0.5 relative h-full transition-transform transform group-hover:-translate-x-2 group-hover:-translate-y-2 bg-black dark:bg-gradient-to-r from-primary-500 via-ternary-500 to-secondary-500'>
+      <div
+        className={clsx(
+          'p-0.5 relative h-full',
+          'transition transform ease-linear',
+          'group-hover:-translate-x-2 group-hover:-translate-y-2',
+          'bg-black dark:bg-dark-500 dark:hover:bg-gradient-to-r',
+          'from-primary-500 via-ternary-500 to-secondary-500'
+        )}
+      >
         <div className='p-3 transition-opacity dark:bg-dark-900 bg-gray-50 h-full'>
           {children}
         </div>

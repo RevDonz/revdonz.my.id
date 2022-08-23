@@ -1,3 +1,4 @@
+import Button from '@/components/atoms/Button';
 import Card from '@/components/atoms/Card';
 import Hero from '@/components/mollecules/Hero';
 import ProjectCard from '@/components/mollecules/ProjectCard';
