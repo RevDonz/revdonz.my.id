@@ -16,7 +16,7 @@ export const projects = [
     date: '20/08/2022',
     summary: 'Todolist apps build with NextJS, Mantine.',
     image: '',
-    stack: ['NextJS', 'Mantine', 'Typescript'],
+    stack: ['NextJS', 'Typescript', 'Mantine'],
     link: {
       github: 'https://github.com/RevDonz/next-todolist',
       demo: 'https://next-todolist-peach.vercel.app/',
@@ -38,7 +38,7 @@ export const projects = [
     date: '07/09/2021',
     summary: 'Build a landing page website for Kerjago.',
     image: '',
-    stack: ['NextJS', 'TailwindCSS', 'Redux', 'Typescript'],
+    stack: ['NextJS', 'Typescript', 'Redux', 'TailwindCSS'],
     link: {
       github: '',
       demo: 'https://kerjago.id/',
@@ -49,10 +49,21 @@ export const projects = [
     date: '07/09/2021',
     summary: 'Build a website for anotate paper.',
     image: '',
-    stack: ['Next JS', 'Typescript', 'TailwindCSS', 'Redux'],
+    stack: ['NextJS', 'Typescript', 'TailwindCSS', 'Redux'],
     link: {
       github: 'https://github.com/fanzru/web-anotasi-paper',
       demo: 'https://skripsi.fanzru.dev/',
+    },
+  },
+  {
+    title: 'Portfolio Website',
+    date: '07/09/2021',
+    summary: 'Build My old portfolio website with ReactJS and TailwindCSS.',
+    image: '',
+    stack: ['ReactJS', 'Javascript', 'TailwindCSS'],
+    link: {
+      github: 'https://github.com/RevDonz/revdonz.github.io',
+      demo: 'https://revdonz-portfolio.vercel.app/',
     },
   },
 ];
