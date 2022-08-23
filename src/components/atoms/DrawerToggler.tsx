@@ -1,14 +1,13 @@
+import useDrawer from '@/hooks/useDrawer';
 import clsx from 'clsx';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import React, { useState } from 'react';
+import React from 'react';
 import { HiMenuAlt2, HiOutlineX } from 'react-icons/hi';
-import { Routes } from '../mollecules/Navbar';
+import Drawer from '../mollecules/Drawer';
 import Button from './Button';
-import UnstyledLink from './UnstyledLink';
 
 const DrawerToggler = () => {
-  const [open, setOpen] = useState(false);
+  const { isOpen, changeDrawer } = useDrawer();
+
   return (
     <>
       <Button
@@ -17,45 +16,12 @@ const DrawerToggler = () => {
           'text-lg rounded-lg',
           'md:hidden block'
         )}
-        onClick={() => setOpen(!open)}
+        onClick={changeDrawer}
       >
-        {!open ? <HiMenuAlt2 /> : <HiOutlineX />}
+        {!isOpen ? <HiMenuAlt2 /> : <HiOutlineX />}
       </Button>
-      {open && <Drawer />}
+      {isOpen && <Drawer />}
     </>
-  );
-};
-
-const Drawer = () => {
-  const { pathname } = useRouter();
-
-  return (
-    <aside
-      className={clsx(
-        'fixed md:hidden w-screen h-screen',
-        'dark:bg-dark-900 bg-gray-50',
-        'left-0 top-20 z-50'
-      )}
-    >
-      <div className='layout flex flex-col'>
-        {Routes.map((route) => {
-          return (
-            <UnstyledLink
-              href={route.link}
-              key={route.link}
-              className={clsx(
-                'py-4 border-b-[1.6px] font-medium',
-                pathname === route.link
-                  ? 'border-primary-600 dark:border-primary-500'
-                  : 'text-gray-700 dark:text-gray-300 border-dark-100 dark:border-dark-500'
-              )}
-            >
-              {route.name}
-            </UnstyledLink>
-          );
-        })}
-      </div>
-    </aside>
   );
 };
 
