@@ -14,7 +14,7 @@ specifiers:
   framer-motion: ^7.2.1
   jotai: ^1.8.0
   next: 12.1.6
-  next-pwa: ^5.6.0
+  next-pwa: 5.5.5
   next-themes: ^0.2.0
   nprogress: ^0.2.0
   postcss: ^8.4.16
@@ -34,7 +34,7 @@ dependencies:
   framer-motion: 7.2.1_ef5jwxihqo6n7gxfmzogljlgcm
   jotai: 1.8.0_6r6e3esjotgf6paivxx3vltazm
   next: 12.1.6_mihsxpuqvgf3kzmp2yw7mj4cuy
-  next-pwa: 5.6.0_57ternvvb2kwfbuil6z7pv22nm
+  next-pwa: 5.5.5_57ternvvb2kwfbuil6z7pv22nm
   next-themes: 0.2.0_2mgcgz5qhsdxw4fgpqzqeafmkq
   nprogress: 0.2.0
   react: 18.1.0
@@ -3915,8 +3915,8 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: false
 
-  /next-pwa/5.6.0_57ternvvb2kwfbuil6z7pv22nm:
-    resolution: {integrity: sha512-XV8g8C6B7UmViXU8askMEYhWwQ4qc/XqJGnexbLV68hzKaGHZDMtHsm2TNxFcbR7+ypVuth/wwpiIlMwpRJJ5A==}
+  /next-pwa/5.5.5_57ternvvb2kwfbuil6z7pv22nm:
+    resolution: {integrity: sha512-EdheDzxr3V7piAeW2qAeH0uJW5iouSt7s/Fzz6xuvkmRPgbyqQeRY/3ZOWbhfgbPBuzGjdbBWzVurWJPH8bY5w==}
     peerDependencies:
       next: '>=9.0.0'
     dependencies:
