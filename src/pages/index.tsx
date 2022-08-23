@@ -39,14 +39,15 @@ export default function Index() {
       />
       <div className='w-full border-solid md:w-1/2 bg-secondary text-center md:text-left select-none'>
         <h1>Reva Doni Aprilio</h1>
-        <h3
+        <p
           className={clsx(
             'bg-clip-text text-transparent bg-gradient-to-r pt-2',
+            'text-xl font-bold md:text-2xl',
             'from-primary-500 via-ternary-500 to-secondary-500'
           )}
         >
           Student & FrontEnd Developer
-        </h3>
+        </p>
         <p className='pt-4 pb-8 m-0 leading-7 border-0 border-gray-300 sm:pr-10 lg:text-lg'>
           {"Hello, I'm Reva Doni Aprilio. Welcome to my personal website."}
         </p>

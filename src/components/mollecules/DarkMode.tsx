@@ -20,6 +20,7 @@ const DarkMode = () => {
       onClick={() => {
         setTheme(theme === 'light' ? 'dark' : 'light');
       }}
+      aria-label='Darkmode Button'
     >
       {theme === 'light' ? (
         <HiMoon className={clsx('text-primary-700')} />
