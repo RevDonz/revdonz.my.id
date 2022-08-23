@@ -1,31 +1,27 @@
 import { ProjectProps } from '@/data/project';
-import UnderlinedLink from './UnderlinedLink';
 import { FaGithub } from 'react-icons/fa';
-import { FiGlobe } from 'react-icons/fi';
+import { HiOutlineExternalLink } from 'react-icons/hi';
+import IconLink from './IconLink';
 
 const ProjectCard = ({ title, summary, link }: ProjectProps) => {
   return (
     <div className='flex flex-col h-full'>
-      <h2 className='text-2xl font-medium'>{title}</h2>
-
-      <p className='my-4'>{summary}</p>
-
-      <div className='flex mt-auto gap-4'>
-        {/* <UnderlinedLink href={link.github}>Repository</UnderlinedLink>
-        <UnderlinedLink href={link.demo}>Demo</UnderlinedLink> */}
-        <UnderlinedLink href={''}>
-          <div className='flex items-center gap-1'>
-            <FaGithub />
-            <p>Repository</p>
-          </div>
-        </UnderlinedLink>
-        <UnderlinedLink href={''}>
-          <div className='flex items-center gap-1'>
-            <FiGlobe />
-            <p>Demo</p>
-          </div>
-        </UnderlinedLink>
+      <div className='flex justify-between'>
+        <h2 className='text-2xl font-medium'>{title}</h2>
+        <div className='flex gap-4'>
+          {link.github && (
+            <IconLink href={link.github} className='text-xl'>
+              <FaGithub />
+            </IconLink>
+          )}
+          {link.demo && (
+            <IconLink href={link.demo} className='text-xl'>
+              <HiOutlineExternalLink />
+            </IconLink>
+          )}
+        </div>
       </div>
+      <p className='my-4'>{summary}</p>
     </div>
   );
 };

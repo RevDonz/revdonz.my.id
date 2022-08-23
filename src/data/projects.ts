@@ -5,7 +5,7 @@ export const projects = [
     summary:
       'Practice slicing web design into a website page with Tailwindcss.',
     image: '',
-    stack: ['React', 'TailwindCSS'],
+    stack: ['ReactJS', 'TailwindCSS'],
     link: {
       github: 'https://github.com/RevDonz/react-laslesvpn',
       demo: 'https://revdonz.github.io/react-laslesvpn/',
@@ -14,9 +14,9 @@ export const projects = [
   {
     title: 'To Do List',
     date: '20/08/2022',
-    summary: 'Todolist apps build with NextJS, Mantine',
+    summary: 'Todolist apps build with NextJS, Mantine.',
     image: '',
-    stack: ['Next.Js', 'Mantine', 'Typescript'],
+    stack: ['NextJS', 'Mantine', 'Typescript'],
     link: {
       github: 'https://github.com/RevDonz/next-todolist',
       demo: 'https://next-todolist-peach.vercel.app/',
@@ -27,7 +27,7 @@ export const projects = [
     date: '07/09/2021',
     summary: 'Build an Inventory website page with MERN Stack.',
     image: '',
-    stack: ['Mongo DB', 'Express JS', 'React JS', 'Node JS'],
+    stack: ['MongoDB', 'ExpressJS', 'ReactJS', 'NodeJS', 'TailwindCSS'],
     link: {
       github: 'https://github.com/RevDonz/Inventory-Lab',
       demo: 'https://inventory-lab.netlify.app/',
@@ -36,20 +36,20 @@ export const projects = [
   {
     title: 'Kerjago Web',
     date: '07/09/2021',
-    summary: 'Build a landing page website for Kerjago',
+    summary: 'Build a landing page website for Kerjago.',
     image: '',
-    stack: ['Mongo DB', 'Express JS', 'React JS', 'Node JS'],
+    stack: ['NextJS', 'TailwindCSS', 'Redux', 'Typescript'],
     link: {
-      github: 'https://github.com/RevDonz/Inventory-Lab',
-      demo: 'https://inventory-lab.netlify.app/',
+      github: '',
+      demo: 'https://kerjago.id/',
     },
   },
   {
     title: 'Paper Anotation',
     date: '07/09/2021',
-    summary: 'Build a landing page website for Kerjago',
+    summary: 'Build a website for anotate paper.',
     image: '',
-    stack: ['Mongo DB', 'Express JS', 'React JS', 'Node JS'],
+    stack: ['Next JS', 'Typescript', 'TailwindCSS', 'Redux'],
     link: {
       github: 'https://github.com/fanzru/web-anotasi-paper',
       demo: 'https://skripsi.fanzru.dev/',

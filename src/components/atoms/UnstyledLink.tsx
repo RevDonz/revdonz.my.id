@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import Link, { LinkProps } from 'next/link';
-import React from 'react';
+import React, { createElement } from 'react';
 
 export interface UnstyledLinkProps extends LinkProps {
   href: string;
@@ -14,6 +14,13 @@ const UnstyledLink: React.FunctionComponent<UnstyledLinkProps> = ({
   children,
   ...props
 }) => {
+  if (href.startsWith('http')) {
+    return createElement(
+      'a',
+      { href, rel: 'noopener noreferrer', target: '_blank', ...props },
+      children
+    );
+  }
   return (
     <Link href={href} scroll={false} {...props}>
       <a
