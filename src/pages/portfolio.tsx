@@ -1,4 +1,5 @@
 import Card from '@/components/atoms/Card';
+import Head from '@/components/atoms/Head';
 import Hero from '@/components/mollecules/Hero';
 import ProjectCard from '@/components/mollecules/ProjectCard';
 import Main from '@/components/template';
@@ -8,6 +9,7 @@ import React from 'react';
 const portfolio = () => {
   return (
     <Main className='mt-10'>
+      <Head title='Portfolio' />
       <Hero
         title={'Portfolio'}
         description={
