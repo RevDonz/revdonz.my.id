@@ -1,3 +1,4 @@
+import Head from '@/components/atoms/Head';
 import Hero from '@/components/mollecules/Hero';
 import Main from '@/components/template';
 import clsx from 'clsx';
@@ -35,6 +36,7 @@ const blog = () => {
   };
   return (
     <Main className='mt-10'>
+      <Head title='Blog' />
       <Hero title={'Blog'} description={'Ini adalah blog'} />
       <section className={clsx('relative')}>
         <div className='flex flex-col space-y-3 group'>

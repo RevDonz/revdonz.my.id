@@ -15,6 +15,7 @@ specifiers:
   jotai: ^1.8.0
   next: 12.1.6
   next-pwa: 5.5.5
+  next-seo: ^5.5.0
   next-themes: ^0.2.0
   nprogress: ^0.2.0
   postcss: ^8.4.16
@@ -35,6 +36,7 @@ dependencies:
   jotai: 1.8.0_6r6e3esjotgf6paivxx3vltazm
   next: 12.1.6_mihsxpuqvgf3kzmp2yw7mj4cuy
   next-pwa: 5.5.5_57ternvvb2kwfbuil6z7pv22nm
+  next-seo: 5.5.0_2mgcgz5qhsdxw4fgpqzqeafmkq
   next-themes: 0.2.0_2mgcgz5qhsdxw4fgpqzqeafmkq
   nprogress: 0.2.0
   react: 18.1.0
@@ -3935,6 +3937,18 @@ packages:
       - supports-color
       - uglify-js
       - webpack
+    dev: false
+
+  /next-seo/5.5.0_2mgcgz5qhsdxw4fgpqzqeafmkq:
+    resolution: {integrity: sha512-5ouBHFtx8YrSDW44lj0qIEQ+oMcz6stgoITB+SqHUZbhgizoJsyLmq73gJ0lxtEKpcN8vG2QgRIJfdb8OAPChw==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 12.1.6_mihsxpuqvgf3kzmp2yw7mj4cuy
+      react: 18.1.0
+      react-dom: 18.1.0_react@18.1.0
     dev: false
 
   /next-themes/0.2.0_2mgcgz5qhsdxw4fgpqzqeafmkq:
