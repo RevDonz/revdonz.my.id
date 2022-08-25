@@ -1,13 +1,14 @@
+import clsx from 'clsx';
+
 export interface HeroProps {
   title: string;
   description: string;
-  // children?: React.ReactNode;
-  // className?: string;
+  className?: string;
 }
 
-const Hero = ({ title, description }: HeroProps) => {
+const Hero = ({ title, description, ...props }: HeroProps) => {
   return (
-    <section className="mb-8">
+    <section className={clsx('mb-8', props.className)}>
       <h1>{title}</h1>
       <p>{description}</p>
     </section>
