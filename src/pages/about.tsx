@@ -21,7 +21,16 @@ const about = () => {
           distinctio ea quas animi quis ab.
         </p>
       </HeroWithPhoto>
-      <Hero title='Contact' description='Contact me' />
+      <Hero
+        title='Contact'
+        description="I'm excited to connect with everyone so please don’t hesitate to get in touch with me by following my social media bellow:"
+      />
+      <div className=''>
+        <ul className='list-disc'>
+          <li>asd</li>
+          <li>asd</li>
+        </ul>
+      </div>
     </Main>
   );
 };

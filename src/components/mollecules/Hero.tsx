@@ -9,7 +9,7 @@ export interface HeroProps {
 const Hero = ({ title, description, ...props }: HeroProps) => {
   return (
     <section className={clsx('mb-8', props.className)}>
-      <h1>{title}</h1>
+      <h1 className='mb-1'>{title}</h1>
       <p>{description}</p>
     </section>
   );

@@ -15,7 +15,7 @@ const HeroWithPhoto = ({
   children,
 }: HeroProps) => {
   return (
-    <div className={clsx('flex flex-col md:flex-row-reverse justify-between pb-10')}>
+    <div className={clsx('flex flex-col md:flex-row-reverse justify-between mb-8')}>
       <figure
         className={clsx(
           'w-[6rem] h-[6rem]',
