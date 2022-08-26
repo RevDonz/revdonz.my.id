@@ -1,18 +1,7 @@
-import Head from '@/components/atoms/Head';
-import Hero from '@/components/mollecules/Hero';
-import Main from '@/components/template';
-import React from 'react';
+import Construct from '@/components/atoms/Construct';
 
 const about = () => {
-  return (
-    <Main className='mt-10'>
-      <Head title='About' />
-      <Hero
-        title={'About Me'}
-        description={'Ini adalah halaman tentang saya'}
-      />
-    </Main>
-  );
+  return <Construct />;
 };
 
 export default about;
