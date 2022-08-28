@@ -49,7 +49,7 @@ export default function Index() {
           Student & FrontEnd Developer
         </p>
         <p className='pt-4 pb-8 m-0 leading-7 border-0 border-gray-300 sm:pr-10 lg:text-lg'>
-          {"Hello everyone👋 I'm Reva Doni Aprilio. Welcome to my personal website."}
+          {'Hello everyone👋 Welcome to my personal website.'}
         </p>
       </div>
       <div className='relative w-full max-w-md mb-4 text-center bg-no-repeat bg-contain border-solid md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 select-none'>
