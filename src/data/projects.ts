@@ -49,7 +49,7 @@ export const projects = [
     date: '07/09/2021',
     summary: 'Build a website for anotate paper.',
     image: '',
-    stack: ['NextJS', 'Typescript', 'TailwindCSS', 'Redux'],
+    stack: ['NextJS', 'Typescript', 'Redux', 'TailwindCSS'],
     link: {
       github: 'https://github.com/fanzru/web-anotasi-paper',
       demo: 'https://skripsi.fanzru.dev/',
@@ -64,6 +64,18 @@ export const projects = [
     link: {
       github: 'https://github.com/RevDonz/revdonz.github.io',
       demo: 'https://revdonz-portfolio.vercel.app/',
+    },
+  },
+  {
+    title: 'SISFO Klinik',
+    date: '01/05/2021',
+    summary:
+      'Build website to manage clinical data such as patient data, drug data and transaction data.',
+    image: '',
+    stack: ['NextJS', 'Typescript', 'Redux', 'TailwindCSS'],
+    link: {
+      github: 'https://github.com/ilhamizzul/FE-SISFO-KLINIK',
+      demo: 'https://fe-sisfo-klinik.vercel.app/',
     },
   },
 ];
