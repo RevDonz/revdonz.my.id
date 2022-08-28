@@ -45,10 +45,10 @@ const about = () => {
           </ul>
         </div>
         <p>
-          Also you can{' '}
+          Also you can read{' '}
           <span>
-            <UnstyledLink href='https://drive.google.com/file/d/11V6QHaLhCcFbBokDUE7r_vBwYGiNixZC/view?usp=sharing'>
-              read my resume here
+            <UnstyledLink href='https://drive.google.com/file/d/11V6QHaLhCcFbBokDUE7r_vBwYGiNixZC/view?usp=sharing' className='font-semibold'>
+              my resume here
             </UnstyledLink>
           </span>
         </p>
