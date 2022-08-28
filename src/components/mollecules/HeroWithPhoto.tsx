@@ -15,11 +15,15 @@ const HeroWithPhoto = ({
   children,
 }: HeroProps) => {
   return (
-    <div className={clsx('flex flex-col md:flex-row-reverse justify-between mb-8')}>
+    <div
+      className={clsx(
+        'flex flex-col md:flex-row-reverse justify-between mb-8 w-full'
+      )}
+    >
       <figure
         className={clsx(
-          'w-[6rem] h-[6rem]',
-          'md:w-[10rem] md:h-[10rem]',
+          'w-24 h-24',
+          'md:w-40 h-40',
           'relative',
           'flex items-center self-start md:justify-end',
           'mb-4 md:mb-0 md:ml-4'
@@ -34,11 +38,11 @@ const HeroWithPhoto = ({
           className={clsx('rounded-full object-cover')}
         />
       </figure>
-      <section>
+      <section className={clsx('w-full md:w-5/6')}>
         <h1>{title}</h1>
         <p
           className={clsx(
-            'max-w-max mt-2 mb-4',
+            'mt-2 mb-4 max-w-max',
             'text-transparent font-bold text-xl md:text-2xl',
             'bg-clip-text bg-gradient-to-r',
             'from-primary-500 to-secondary-500 via-ternary-500'
@@ -47,7 +51,7 @@ const HeroWithPhoto = ({
           {subtitle}
         </p>
         <p className={clsx('max-w-prose', 'mb-2 md:mb-4')}>{description}</p>
-        {children}
+        <div className='space-y-2 md:space-y-4'>{children}</div>
       </section>
     </div>
   );

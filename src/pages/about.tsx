@@ -9,14 +9,20 @@ import React from 'react';
 const about = () => {
   return (
     <Main className='mt-10'>
-      <Head title='About' />
-      <HeroWithPhoto title={'About Me'} subtitle='Reva Doni Aprilio'>
-        <p className='mb-3'>
-          {
-            "I'm a Frontend Developer and Software Engineering Student at Telkom University."
-          }
+      <Head title='About Me' />
+      <HeroWithPhoto
+        title={'About Me'}
+        subtitle='Reva Doni Aprilio'
+        description={
+          "Hello, my name is Reva Doni Aprilio, you can call me Doni for short. I live in Bandung, Indonesia. I'm 20 years old. I'm a Frontend Developer and Software Engineering Student at Telkom University."
+        }
+      >
+        <p>
+          My major helps me in studying and deepening the process of software
+          development, maintenance, and quality management because it is
+          supported by courses in Software Requirements Engineering, Software
+          Modeling, Software Architecture and Design, Software Construction etc.
         </p>
-        <p></p>
       </HeroWithPhoto>
       <Hero
         title='Contact'
@@ -41,7 +47,7 @@ const about = () => {
         <p>
           Also you can{' '}
           <span>
-            <UnstyledLink href='https://drive.google.com/file/d/1mipWnKUdiiVJjN1MCLE4wBr_7WVPKfvj/view?usp=sharing'>
+            <UnstyledLink href='https://drive.google.com/file/d/11V6QHaLhCcFbBokDUE7r_vBwYGiNixZC/view?usp=sharing'>
               read my resume here
             </UnstyledLink>
           </span>
