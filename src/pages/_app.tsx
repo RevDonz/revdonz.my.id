@@ -6,6 +6,7 @@ import {
   domAnimation,
   LazyMotion,
   motion,
+  m,
 } from 'framer-motion';
 import clsx from 'clsx';
 import Navbar from '@/components/organism/Header';
@@ -14,12 +15,13 @@ import { Router } from 'next/router';
 import NProgress from 'nprogress';
 import '@/styles/nprogress.css';
 import { DefaultSeo } from 'next-seo';
+import { variants } from '@/animations/variants';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
 Router.events.on('routeChangeError', () => NProgress.done());
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <ThemeProvider defaultTheme='dark' attribute='class'>
       <DefaultSeo
@@ -44,18 +46,21 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div className='min-h-screen flex flex-col h-full'>
           <Navbar />
           <AnimatePresence
+            mode='wait'
             initial={false}
             onExitComplete={() => window.scrollTo(0, 0)}
-            exitBeforeEnter
           >
-            <motion.main
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className={clsx('flex flex-col flex-grow h-full')}
+            <m.div
+              key={router.asPath}
+              variants={variants}
+              initial='hidden'
+              animate='enter'
+              exit='exit'
+              transition={{ ease: 'easeInOut', duration: 0.5 }}
+              className={clsx('flex flex-col h-full flex-grow')}
             >
               <Component {...pageProps} />
-            </motion.main>
+            </m.div>
           </AnimatePresence>
           <Footer />
         </div>
