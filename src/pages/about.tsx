@@ -2,36 +2,13 @@ import Head from '@/components/atoms/Head';
 import Hero from '@/components/mollecules/Hero';
 import HeroWithPhoto from '@/components/mollecules/HeroWithPhoto';
 import Main from '@/components/template';
+import { Timelines } from '@/data/timeline';
+import clsx from 'clsx';
 import React from 'react';
-
-export type TimelineProps = {
-  title: string;
-  description: string;
-  place: string;
-  startDate: Date;
-  endDate: Date | null;
-  type: 'edu' | 'work';
-};
+import { HiChevronDown, HiDesktopComputer } from 'react-icons/hi';
+import { IoIosSchool } from 'react-icons/io';
 
 const about = () => {
-  const Timelines: TimelineProps[] = [
-    {
-      title: 'High School',
-      description: 'string',
-      place: 'SMKN 7 Baleendah',
-      startDate: new Date(),
-      endDate: new Date(),
-      type: 'edu',
-    },
-    {
-      title: 'Frontend Developer',
-      description: 'string',
-      place: 'Kerjago.id',
-      startDate: new Date(),
-      endDate: new Date(),
-      type: 'work',
-    },
-  ];
   return (
     <Main className='mt-10'>
       <Head title='About Me' />
@@ -49,38 +26,52 @@ const about = () => {
           Modeling, Software Architecture and Design, Software Construction etc.
         </p>
       </HeroWithPhoto>
-      <Hero title='Timeline' description='Timeline'>
-        <ol className='relative border-l-2 border-primary-200 dark:border-gray-700 mt-5 ml-4'>
+      <Hero
+        title='Timeline'
+        description='Take a look at my timeline below, it consists of my career path, formal education and more.'
+      >
+        <ol className='relative border-l border-gray-200 dark:border-primary-500 mt-5 ml-3'>
           {Timelines.map((timeline, index) => {
             return (
-              <li className='mb-10 ml-6' key={index}>
-                <span className='flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900'>
-                  <svg
-                    aria-hidden='true'
-                    className='w-3 h-3 text-blue-600 dark:text-blue-400'
-                    fill='currentColor'
-                    viewBox='0 0 20 20'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      fillRule='evenodd'
-                      d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z'
-                      clipRule='evenodd'
-                    ></path>
-                  </svg>
-                </span>
-                <h3 className='flex items-center mb-1'>{timeline.title}</h3>
-                <time className='block mb-2 text-sm font-normal leading-none'>
-                  {timeline.place}
-                </time>
-                <div className=''>
-                  <p>May 2022 - Present</p>
-                  <p className='mb-4 text-base font-normal'>
-                    Get access to over 20+ pages including a dashboard layout,
-                    charts, kanban board, calendar, and pre-order E-commerce
-                    &amp; Marketing pages.
-                  </p>
-                </div>
+              <li className='mb-5 ml-4' key={index}>
+                <div
+                  className={clsx(
+                    'absolute w-3 h-3 rounded-full mt-1.5 -left-1.5 border',
+                    'bg-dark-300 dark:bg-primary-600',
+                    // 'bg-dark-300 dark:bg-gradient-to-r from-primary-500 via-ternary-500 to-secondary-500',
+                    'border-white dark:border-gray-900'
+                  )}
+                />
+                <details className='group'>
+                  <summary className='flex justify-between items-center md:cursor-pointer'>
+                    <div>
+                      <h3 className='text-xl font-semibold text-gray-900 dark:text-white'>
+                        {timeline.title}
+                      </h3>
+                      <div className='flex items-center my-2'>
+                        {timeline.type === 'edu' ? (
+                          <IoIosSchool />
+                        ) : (
+                          <HiDesktopComputer />
+                        )}
+                        <span className='text-sm font-normal ml-1'>
+                          - {timeline.place}
+                        </span>
+                      </div>
+                    </div>
+                    <div className='group-open:-rotate-180 transition'>
+                      <HiChevronDown className='text-xl' />
+                    </div>
+                  </summary>
+                  <div className='transition duration-300'>
+                    <p className='text-sm text-dark-100 mb-1'>
+                      {timeline.date}
+                    </p>
+                    <p className='text-base font-normal'>
+                      {timeline.description}
+                    </p>
+                  </div>
+                </details>
               </li>
             );
           })}

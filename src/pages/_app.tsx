@@ -5,7 +5,6 @@ import {
   AnimatePresence,
   domAnimation,
   LazyMotion,
-  motion,
   m,
 } from 'framer-motion';
 import clsx from 'clsx';

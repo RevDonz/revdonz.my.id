@@ -1,4 +1,4 @@
-import { ProjectProps } from '@/data/project';
+import { ProjectProps } from '@/data/projects';
 import { FaGithub } from 'react-icons/fa';
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import IconFinder from '../atoms/IconFinder';
