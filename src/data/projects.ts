@@ -1,4 +1,27 @@
-export const projects = [
+export interface ProjectProps {
+  title: string;
+  date: string;
+  summary: string;
+  image: string;
+  stack: Array<string>;
+  link: {
+    github: string;
+    demo: string;
+  };
+}
+
+export const projects: ProjectProps[] = [
+  {
+    title: 'Portfolio Website V1',
+    date: '07/09/2021',
+    summary: 'Build My old portfolio website with ReactJS and TailwindCSS.',
+    image: '',
+    stack: ['ReactJS', 'Javascript', 'TailwindCSS'],
+    link: {
+      github: 'https://github.com/RevDonz/revdonz.github.io',
+      demo: 'https://revdonz-portfolio.vercel.app/',
+    },
+  },
   {
     title: 'Lasles VPN',
     date: '17/04/2021',
@@ -33,17 +56,7 @@ export const projects = [
       demo: 'https://inventory-lab.netlify.app/',
     },
   },
-  {
-    title: 'Kerjago Web',
-    date: '07/09/2021',
-    summary: 'Build a landing page website for Kerjago.',
-    image: '',
-    stack: ['NextJS', 'Typescript', 'Redux', 'TailwindCSS'],
-    link: {
-      github: '',
-      demo: 'https://kerjago.id/',
-    },
-  },
+
   {
     title: 'Paper Anotation',
     date: '07/09/2021',
@@ -56,17 +69,6 @@ export const projects = [
     },
   },
   {
-    title: 'Portfolio Website',
-    date: '07/09/2021',
-    summary: 'Build My old portfolio website with ReactJS and TailwindCSS.',
-    image: '',
-    stack: ['ReactJS', 'Javascript', 'TailwindCSS'],
-    link: {
-      github: 'https://github.com/RevDonz/revdonz.github.io',
-      demo: 'https://revdonz-portfolio.vercel.app/',
-    },
-  },
-  {
     title: 'SISFO Klinik',
     date: '01/05/2021',
     summary:
@@ -76,6 +78,17 @@ export const projects = [
     link: {
       github: 'https://github.com/ilhamizzul/FE-SISFO-KLINIK',
       demo: 'https://fe-sisfo-klinik.vercel.app/',
+    },
+  },
+  {
+    title: 'Kerjago Web',
+    date: '07/09/2021',
+    summary: 'Build a landing page website for Kerjago.',
+    image: '',
+    stack: ['NextJS', 'Typescript', 'Redux', 'TailwindCSS'],
+    link: {
+      github: '',
+      demo: 'https://kerjago.id/',
     },
   },
 ];

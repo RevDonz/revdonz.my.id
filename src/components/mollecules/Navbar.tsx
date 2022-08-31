@@ -19,6 +19,10 @@ export const Routes = [
     link: '/about',
     name: 'About',
   },
+  {
+    link: '/contact',
+    name: 'Contact',
+  },
 ];
 
 const Navbar = () => {
