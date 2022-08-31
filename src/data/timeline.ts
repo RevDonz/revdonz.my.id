@@ -14,7 +14,7 @@ export const Timelines: TimelineProps[] = [
     description:
       'Kerjago is a platform to educate job and job seekers to Technology Enthusiast and a platform to bring together Human Resources, Users, Companies and Job Seekers. I work as a Frontend Developer that developed a website for kerjago.com',
     place: 'Kerjago.id',
-    date: 'May 2020 - Present',
+    date: 'May 2022 - Present',
     type: 'work',
   },
   {
