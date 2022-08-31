@@ -1,22 +1,38 @@
-export const Contacts = [
+export type ContactProps = {
+  name: string;
+  label: string;
+  link: string;
+};
+
+export const Contacts: ContactProps[] = [
   {
-    type: 'Email',
+    name: 'Email',
+    label: 'aprilio842@gmail.com',
     link: 'mailto:aprilio842@gmail.com',
   },
   {
-    type: 'Github',
+    name: 'Facebook',
+    label: 'Reva Doni Aprilio',
+    link: 'https://www.facebook.com/reva.doni.aprilio/',
+  },
+  {
+    name: 'Github',
+    label: 'RevDonz',
     link: 'https://github.com/RevDonz',
   },
   {
-    type: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/revdonz',
-  },
-  {
-    type: 'Instagram',
+    name: 'Instagram',
+    label: '@revdonz_',
     link: 'https://www.instagram.com/revdonz_',
   },
   {
-    type: 'Telegram',
+    name: 'LinkedIn',
+    label: 'Reva Doni Aprilio',
+    link: 'https://www.linkedin.com/in/revdonz',
+  },
+  {
+    name: 'Telegram',
+    label: 'RevDonz',
     link: 'https://t.me/RevDonz',
   },
 ];

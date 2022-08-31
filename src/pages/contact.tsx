@@ -18,9 +18,9 @@ const Contact = () => {
               return (
                 <li key={index}>
                   <p className='truncate my-2'>
-                    {contact.type} -{' '}
+                    {contact.name} -{' '}
                     <UnstyledLink href={contact.link}>
-                      {contact.link.replace('mailto:', '')}
+                      {contact.label}
                     </UnstyledLink>
                   </p>
                 </li>
