@@ -1,8 +1,8 @@
-import Head from "@/components/atoms/Head";
-import UnstyledLink from "@/components/atoms/UnstyledLink";
-import Hero from "@/components/mollecules/Hero";
-import Main from "@/components/template";
-import { Contacts } from "@/data/contacts";
+import Head from '@/components/atoms/Head';
+import UnstyledLink from '@/components/atoms/UnstyledLink';
+import Hero from '@/components/mollecules/Hero';
+import Main from '@/components/template';
+import { Contacts } from '@/data/contacts';
 
 const Contact = () => {
   return (
@@ -28,17 +28,6 @@ const Contact = () => {
             })}
           </ul>
         </div>
-        <p>
-          Also you can read{' '}
-          <span>
-            <UnstyledLink
-              href='https://drive.google.com/file/d/11V6QHaLhCcFbBokDUE7r_vBwYGiNixZC/view?usp=sharing'
-              className='font-semibold'
-            >
-              my resume here
-            </UnstyledLink>
-          </span>
-        </p>
       </Hero>
     </Main>
   );

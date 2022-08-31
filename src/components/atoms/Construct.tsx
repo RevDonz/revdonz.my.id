@@ -12,7 +12,9 @@ const Construct = () => {
         width={300}
         height={300}
       />
-      <h1 className='mb-3'>Page is Under Construction</h1>
+      <p className='mb-3 text-xl font-bold md:text-2xl'>
+        Page is Under Construction
+      </p>
       <Link href='/'>
         <a href=''>Back To Home</a>
       </Link>
