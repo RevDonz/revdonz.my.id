@@ -35,17 +35,6 @@ export const projects: ProjectProps[] = [
     },
   },
   {
-    title: 'To Do List',
-    date: '20/08/2022',
-    summary: 'Todolist apps build with NextJS, Mantine.',
-    image: '',
-    stack: ['NextJS', 'Typescript', 'Mantine'],
-    link: {
-      github: 'https://github.com/RevDonz/next-todolist',
-      demo: 'https://next-todolist-peach.vercel.app/',
-    },
-  },
-  {
     title: 'Inventory Lab',
     date: '07/09/2021',
     summary: 'Build an Inventory website page with MERN Stack.',
@@ -89,6 +78,29 @@ export const projects: ProjectProps[] = [
     link: {
       github: '',
       demo: 'https://kerjago.id/',
+    },
+  },
+  // {
+  //   title: 'To Do List',
+  //   date: '20/08/2022',
+  //   summary: 'Todolist apps build with NextJS, Mantine.',
+  //   image: '',
+  //   stack: ['NextJS', 'Typescript', 'Mantine'],
+  //   link: {
+  //     github: 'https://github.com/RevDonz/next-todolist',
+  //     demo: 'https://next-todolist-peach.vercel.app/',
+  //   },
+  // },
+  {
+    title: 'Next.js Starter',
+    date: '20/08/2022',
+    summary:
+      'NEXT.js starter with Tailwind CSS, TypeScript, next-themes (Dark Mode), and React Icons.',
+    image: '',
+    stack: ['NextJS', 'Typescript', 'TailwindCSS'],
+    link: {
+      github: 'https://github.com/RevDonz/next-tailwindcss-starter',
+      demo: 'http://next-tailwindcss-starter-five.vercel.app/',
     },
   },
 ];
