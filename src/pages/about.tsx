@@ -81,7 +81,7 @@ const about = () => {
           Also you can read{' '}
           <span>
             <UnstyledLink
-              href='https://drive.google.com/file/d/1llo-CO1mbHqUsHluH6JgL8mkyGIYDFUp/view?usp=share_link'
+              href='https://drive.google.com/file/d/1F3Et3MR2klJIvF24hXLLGLAOabHEqPaC/view?usp=drive_link'
               className='font-semibold'
             >
               my resume here
